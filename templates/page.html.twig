@@ -4,13 +4,13 @@
      * Theme override to display a single page.
      *
      * The doctype, html, head and body tags are not in this template. Instead they
-     * can be found in the html.html.twig template in this directory.
+     * can be found in the html.`html.twig template in this directory.
      *
      * Available variables:
      *
      * General utility variables:
      * - base_path: The base URL path of the Drupal installation. Will usually be
-     *   "/" unless you have installed Drupal in a sub-directory.
+     *   "/" unless you have installetd Drupal in a sub-directory.
      * - is_front: A flag indicating if the current page is the front page.
      * - logged_in: A flag indicating if the user is registered and signed in.
      * - is_admin: A flag indicating if the user has permission to access
@@ -104,15 +104,12 @@
     <!-- Top Feature Start -->
     <div class="container-fluid top-feature py-5 pt-lg-0">
         <div class="container py-5 pt-lg-0">
-            <div class="row gx-0">
                                 {{ page.features }}
-            </div>
         </div>
     </div>
     <!-- Top Feature End -->
     
-    
-    <!-- About Start -->
+        <!-- About start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="about">
@@ -123,8 +120,8 @@
         </div>
     </div>
     <!-- About End -->
-    
-    
+
+
     <!-- Facts Start -->
     <div class="container-fluid facts my-5 py-5" data-parallax="scroll" data-image-src=" {{ directory }}/img/carousel-1.jpg">
         <div class="container py-5">
@@ -134,109 +131,99 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>    
     <!-- Facts End -->
-    
-    
+
+
     <!-- Features Start -->
     <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="whysection">
-                {{ page.whysection }}
-            </div>
-            </div>
+        <div class="container wow fadeInUp" data-wow-delay="0.1s">
+           {{ page.whysection }}
         </div>
     </div>
     <!-- Features End -->
-    
-    
+
+
     <!-- Service Start -->
-    <div class="container-xxl py-5" style="text-align: center;">
-        <div class="container">
-                            {{ page.service }}
+    <div class="container-xxl py-5">
+        <div class="container wow fadeInUp" data-wow-delay="0.1s">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                {{ page.service }}
+            </div>
         </div>
     </div>
     <!-- Service End -->
-    
-    
+
+
     <!-- Quote Start -->
     <div class="container-fluid quote my-5 py-5" data-parallax="scroll" data-image-src=" {{ directory }}/img/carousel-2.jpg">
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="bg-white rounded p-4 p-sm-5 wow fadeIn" data-wow-delay="0.5s">
-                        {{ page.Quote }}
-                    </div>
-                </div>
-            </div>
+        <div class="container py-5 wow fadeInUp" data-wow-delay="0.1s">
+            {{ page.Quote }}
         </div>
     </div>
     <!-- Quote End -->
-    
-    
+
+
     <!-- Projects Start -->
-    <div class="container-xxl py-5" style="text-align: center;">
-        <div class="container">
-                         {{ page.projects }}
+    <div class="container-xxl py-5">
+        <div class="container wow fadeInUp" data-wow-delay="0.1s">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                {{ page.projects }}
+            </div>
         </div>
     </div>
     <!-- Projects End -->
-    
-    
+
+
     <!-- Team Start -->
-    <div class="container-xxl py-5" style="text-align: center;">
-        <div class="container">
+    <div class="container-xxl py-5">
+        <div class="container wow fadeInUp" data-wow-delay="0.1s">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 {{ page.team }}
+            </div>
         </div>
     </div>
     <!-- Team End -->
-    
-    
+
+
     <!-- Testimonial Start -->
-    <div class="container-xxl py-5" style="text-align: -webkit-center;">
-        <div class="container">
-            <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
-            <div class="testi">
-                    {{ page.testimonial }}
-                </div>
-            </div>
-                </div>
+    <div class="container-xxl py-5">
+        <div class="container wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-5">
+                {{ page.testimonial }}
             </div>
         </div>
     </div>
     <!-- Testimonial End -->
-    
-    <!-- Footer End -->
-     <div class="container-fluid">
-            <div class="row g-5">
-                {{ page.footer }}
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            {{ page.footer }}
         </div>
-    </div> 
+    </div>
     <!-- Footer End -->
-    
-    
     <!-- Copyright Start -->
     <div class="container-fluid copyright py-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+                    &copy; <a class="border-bottom" href="#">Gardener</a>, All Right Reserved.
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a>
+                    Designed By <a class="border-bottom" href="https://htmlcodex.com">Gardener</a> Distributed By <a href="https://themewagon.com">Drupal</a>
                 </div>
             </div>
         </div>
     </div>
     <!-- Copyright End -->
-    
-    
+
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
-    
-    
+
+
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -248,7 +235,7 @@
     <script src="lib/parallax/parallax.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
-    
+
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     
