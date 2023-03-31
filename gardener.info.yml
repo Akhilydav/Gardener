@@ -1,0 +1,24 @@
+name: Gardener Theme
+type: theme
+description: 'Theme with Gardener theme js css library'
+core_version_requirement: ^9.4 || ^10
+base theme: bootstrap5
+bootstrap5: true
+
+libraries:
+  - gardener/global-styling
+regions:
+  logo: 'logo'
+  menu: 'Menu'
+  button: 'Button'
+  banner: 'Banner'
+  features: 'features'
+  aboutstart: 'aboutstart'
+  facts: 'facts'
+  whysection: 'whysection'
+  service: 'service'
+  Quote: 'Quote'
+  projects: 'projects'
+  team: 'team'
+  testimonial: 'testimonial'
+  footer: 'footer'

@@ -1,0 +1,49 @@
+{#
+/**
+ * @file
+ * Theme override to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ */
+#}
+{% if title %}
+    <h3>{{ title }}</h3>
+  {% endif %}
+  <div class="row gx-0">
+  {% for row in rows %}
+    {%
+      set row_classes = [
+        default_row_class ? 'views-row',
+      ]
+    %}
+    <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+ <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+     <div class="d-flex">
+    <div{{ row.attributes.addClass(row_classes) }}>
+        <div class="ps-3" style="width: 200px;
+        margin-left: 25px;
+        margin-top: 40px;">
+
+            <h4>
+            {{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ field_description }}'] }}
+        </h4>
+        <span>
+            {{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ body }}'] }}
+        </span>
+        </div>
+        </div>
+    
+</div>
+ </div>
+ </div>
+  {% endfor %}  
+    </div>

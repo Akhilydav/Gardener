@@ -1,0 +1,27 @@
+global-styling:
+  css:
+    theme:
+      css/bootstrap.min.css: {}
+      lib/animate/animate.min.css: {}
+      lib/animate/animate.css: {}
+      lib/owlcarousel/assets/owl.carousel.min.css: {}
+      lib/lightbox/css/lightbox.min.css: {}
+      lib/lightbox/css/lightbox.css: {}
+      css/style.css: {}
+
+
+  js:
+    lib/counterup/counterup.min.js: {} 
+    lib/easing/easing.min.js: {}
+    lib/easing/easing.js: {}
+    lib/wow/wow.min.js: {}
+    lib/waypoints/waypoints.min.js: {}
+    lib/owlcarousel/owl.carousel.min.js: {}
+    lib/parallax/parallax.min.js: {}
+    lib/isotope/isotope.pkgd.min.js: {}
+    lib/lightbox/js/lightbox.min.js: {}
+    js/main.js: {}
+
+
+  dependencies:
+    - core/jquery
